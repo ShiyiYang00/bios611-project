@@ -1,0 +1,14 @@
+---
+title: "Project Report"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+## Introduction
+
+Write your report here.
+
+## Methods
+
+Explain your methodology.
