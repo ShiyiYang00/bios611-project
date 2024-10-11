@@ -1,6 +1,6 @@
 # Variables for directories
-INTERMEDIATE_DIR = intermediate_data
-FIGURES_DIR = figures
+INTERMEDIATE_DIR = derived_data
+FIGURES_DIR = figs
 
 # Clean target to remove intermediate data and figures
 clean:
