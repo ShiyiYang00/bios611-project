@@ -29,7 +29,6 @@ The study aims to explore the dynamics of employee resignation.
 ## Setup Instructions
 This repository contains an analysis using R, and the workflow is Dockerized.
 
-### Step 1. Build a Docker Container
 Build the container.
 ```bash
 docker build . -t bios611proj-env
@@ -37,4 +36,12 @@ docker build . -t bios611proj-env
 This Docker container is based on rocker/rstudio. To run rstudio server:
 ```bash
 docker run -v $(pwd):/home/rstudio/bios611proj -e PASSWORD=yourpassword --rm -p 8787:8787 bios611proj-env
+```
+
+In addition, Makefile is also provided.
+
+If you want to build the figures, please create the dataset first as I downsampled the original dataset
+
+```bash
+make derived_data/employ_data_sub.rds
 ```
